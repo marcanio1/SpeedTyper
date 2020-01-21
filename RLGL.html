@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Red light Green light</title>
+      <link href="public/css/GameStyle.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto:400,900,700' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/Rlgl.js" tpye="text/javascript"></script>
+	 <link rel="icon" type="image/x-icon" href="public/images/logo.ico" />
+  
+   
+</head>
+
+
+
+<body>
+    <div class="header">
+        <a class="logo">Speed-Typer</a>
+        <a class="middleone">Red Light Green Light</a>
+        <div class="header-right">
+            <a onclick="goBack()">Home</a>
+        </div>
+
+
+    </div>
+
+</body>
+
+<div class="outerimg">
+    <img class="trafficLight" id="trafficLightID" src="public/images/greenlight.png"></img>
+</div>
+<div class="results">
+    <ul class="statsrlgl">
+        <li>Timer: <span id="timer">45</span></li>
+        <li>Errors: <span id="errors">0</span></li>
+    </ul>
+</div>
+
+
+
+
+
+<div class="target mono" id="target"></div>
+<div id="your-attempt" class="mono your-attempt" placeholder="Your text will appear here"></div>
+
+<hr>
+<div>
+    <textarea name="" id="input_text" cols="30" rows="10">This is a warm up to get used to the game. </textarea>
+</div>
+
+<button  href="#" id="reset" class="button"><span>Reset</span></button>
+
+<button onclick="showHowToPlay()" class="button2"><span>Instructions</span></button>
+<p></p>
+
+<p id="HowtoPlay"></p>
+
+
+
+</html>
+
+</html>

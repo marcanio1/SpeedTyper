@@ -1,0 +1,56 @@
+<style>
+
+</style>
+
+<html>
+
+<head>
+    <link href="public/css/GameStyle.css" rel="stylesheet" type="text/css">
+    <link href="public/css/LoginReg.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="public/images/logo.ico" />
+
+
+</head>
+
+<body>
+    <title>Login</title>
+    <div class="header">
+        <a class="logo">Speed-Typer</a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+</body>
+
+<body>
+    <div id="login-box">
+
+        <div class="left">
+            <h1>Sign in</h1>
+            <form action="../controllers/authenticate-controller" method="POST">
+
+                <input id="email" type="text" placeholder="E-mail" name="email" required>
+                <input id="password" type="password" placeholder="Password" name="password" autocomplete="off" required>
+
+                <input type="submit" class="submitbtn" value="SIGN IN">
+            </form>
+        </div>
+        <div class="right">
+            <h1>Sign up</h1>
+            <form action="../controllers/register-controller" method="POST">
+                <input id="email" type="text" placeholder="E-mail" name="email" required>
+                <input id="password" type="password" placeholder="Password" name="password" autocomplete="off" required>
+                <input id="passwordconfirm" class="label" type="password" placeholder="Confirm Password" name="passwordconfirm" autocomplete="off" required>
+
+                <input type="submit" class="submitbtn" value="Submit">
+            </form>
+
+        </div>
+        <div class="or">OR</div>
+
+
+    </div>
+
+</body>
+
+</html>

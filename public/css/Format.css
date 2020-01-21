@@ -1,0 +1,196 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: #E0E0E0;
+    margin: 0;
+}
+
+
+/*Nav bar on the main page*/
+
+.header {
+    overflow: hidden;
+    background-color: #00aeef;
+    padding: 20px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    top: 0;
+}
+
+.header a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    line-height: 25px;
+}
+
+.header a.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header-right a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.header-right {
+    float: right;
+}
+
+
+/* Leaderboards below the games*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff
+}
+
+th {
+    background-color: #00bbff;
+    color: white;
+}
+
+
+/*WPM tester on the main page*/
+
+input {
+    border: 0;
+    border-bottom: 2px solid #00aeef;
+    width: 100%;
+    font-size: 20px;
+    line-height: 35px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: #00aeef;
+}
+
+
+/*Used to set the width of the WPM tester*/
+
+#namer {
+    margin: auto;
+    position: relative;
+    max-width: 800px;
+}
+
+.demoBox {
+    border: 1px solid #00aeef;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*Buttons to get to the games*/
+
+.button {
+    font-size: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #00aeef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #00aeef;
+    color: white;
+}
+
+.button:hover span {
+    display: none;
+}
+
+.button:hover:before {
+    content: "Start Game!"
+}
+
+
+/*Masonry used for dynamic boxes holding the games. Holds all items*/
+
+.masonry {
+    margin: 1.5em 1.5em;
+    padding: 0;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1.5em;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*Each game is inside of an element*/
+
+.item {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: .5em;
+    margin: 1em 0 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.item img {
+    max-width: 100%;
+}
+
+
+/*Determines how many boxes are on the screen based on the width*/
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 765px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .masonry {
+        -moz-column-count: 2.5;
+        -webkit-column-count: 2.5;
+        column-count: 2.5;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}

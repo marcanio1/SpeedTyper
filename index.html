@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Speed-Typer</title>
+    <script src="public//js/textbox.js"></script>
+    <link href="public/css/Format.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="public/images/logo.ico" />
+
+</head>
+
+<body>
+
+    <div class="header">
+        <a class="logo">Speed-Typer</a>
+        <div class="header-right">
+            <a href="login.html">Login/Register</a>
+        </div>
+    </div>
+
+    <div class="TypeBox" id="namer">
+        <p></p>
+        <h id="titleText"></h><b></b></h>
+        <p></p>
+        <label id="paused"></label>
+        <form id="input">
+
+            <input id="typetestInput" type="text" autocomplete="off" onkeyup="start();increment();" />
+
+            <p></p>
+            <label id="WPMFrontPage" style="font-size:20px;"></label>
+            <label id="TimerFrontPage" style="font-size:20px;"></label>
+            <label id="test" style="font-size:20px;"></label>
+        </form>
+        <p id="belowTitle"></p>
+    </div>
+
+    <div class="masonry">
+
+        <div class="grid-sizer"></div>
+        <div class="item">
+            
+            <img style="background-image: url(public/images/StopLight.jpg); width:300px;height:300px;background-size: 100%;"></img>
+            <br>
+            <hr style="border: .5px solid#00aeef;">
+            <button class="button" type="button" onClick="window.location.href='RLGL.html'"><span><b>Red Light - Green Light</b></span></button>
+            <p>Test how often you look at your keyboard while typing with Red Light Green Light! The rules are simple, if you type when the screen turns red you loose! Try typing the prompt as fast as you can when the screen is green!
+            </p>
+        </div>
+        <div class='item' style="background-color: #bfc4ca59;">
+
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>User</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
+
+            <p></p>
+        </div>
+        <div class="item">
+            <div><img style="background-image: url(public/images/ascii.png); width:300px;height:300px;background-size: 100%;background-color: white;"></img>
+                <br>
+                <hr style="border: .5px solid#00aeef;">
+            </div>
+            <button class="button" type="button" onClick="window.location.href='RandomChar.html'"><span><b>Random characters</b></span></button>
+            <p>A randomly generated string of ASCII values will be generated, and the accuracy of typing will be evaluated. Play this game to become more familar with keys you do not use that often!
+            </p>
+        </div>
+        <div class='item' style="background-color: #bfc4ca59;">
+
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>User</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
+
+            <p></p>
+        </div>
+        <div class="item">
+            <div><button style="background-image: url(public/images/clock.png); width:250px;height:300px;background-size: 100%; border: none; background-color: white;"></button>
+                <br>
+                <hr style="border: .5px solid#00aeef;">
+            </div>
+            <button class="button" type="button" onClick="window.location.href='TypeTest.html'"><span><b>Time Test!</b></span></button>
+            <p>The classic Words per minute evaluator. Test how fast you can type set paragraphs and get your WPM and accuracy checked! Type as fast as you can to get on the leaderboard!
+            </p>
+        </div>
+        <div class='item' style="background-color: #bfc4ca59;">
+
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>User</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
+
+            <p></p>
+        </div>
+        <div class='item'>
+            <p>Not working</p>
+            <div><button style="background-image: url(public/images/swords.jpg); width:300px;height:300px;background-size: 100%; background-color: white; background-color: white;border:none"></button>
+            </div>
+
+            <hr style="border: .5px solid#00aeef;">
+            <button class="button" type="button" onClick="window.location.href='TypeFight.html'"><span><b>Type Fighter</b></span></button>
+            <p>
+                Defeat monsters in the epic game mode Type Fighter! Type as fast as you can to defeat the monsters and be sure to type accurately to keep your health up. Can you make it to the boss?
+            </p>
+
+        </div>
+        <div class='item' style="background-color: #bfc4ca59;">
+
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>User</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </table>
+
+            <p></p>
+        </div>
+        <!--Test-->
+
+    </div>
+
+</body>
+
+</html>
