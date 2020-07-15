@@ -1,5 +1,5 @@
 # *Under construction*
-website link - *Will add to personal website*
+website link -https://ericmarcanio.com/SpeedTyper/index.html
 This website features games to improve your typing skills!
 
 ## Built With
