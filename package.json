@@ -17,7 +17,7 @@
     "cryptr": "^6.0.1",
     "ejs": "^2.7.2",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.6-alpha.6",
+    "express-fileupload": "^1.1.9",
     "express-session": "^1.17.0",
     "mysql": "^2.17.1",
     "nodemon": "^1.19.4",
